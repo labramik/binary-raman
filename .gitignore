@@ -1,0 +1,15 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Script cache
+scripts/__pycache__/
+
+# OS metadata
+.DS_Store
+Thumbs.db
