@@ -1,0 +1,15 @@
+# Example marker bands file for Raman analysis
+# Format: phase_name: [comma-separated wavenumbers in cm⁻¹]
+#
+# Notes:
+# - Annotations like (sh.), (dublet), (broad) are optional and will be ignored
+# - Ranges like "1025-1029" will use the first value
+# - One compound per file, or multiple compounds separated by blank lines
+
+DEA:
+  solid: [183, 285, 326, 374, 393, 495, 581, 703, 801, 862, 945, 1025, 1029, 1053, 1088, 1118, 1160, 1177, 1254, 1271, 1300, 1308, 1386, 1400, 1425, 1442, 1453, 1462, 1477, 1487, 1728, 1735]
+  liquid: [252, 374, 468, 605, 644, 790, 858, 884, 920, 1031, 1064, 1098, 1115, 1272, 1304, 1426, 1453, 1731]
+
+# Alternative format with annotations (will be parsed correctly):
+# solid: [183, 285, 326, 374, 393, 495, 581, 703, 801, 862, 945, 1025–1029 (dublet), 1053, 1088, 1118, 1160, 1177, 1254, 1271, 1300 (sh.), 1308, 1386 (sh.), 1400, 1425, 1442, 1453, 1462, 1477, 1487, 1728, 1735 (sh.)]
+# liquid: [252, 374, 468, 605, 644, 790, 858, 884, 920, 1031, 1064, 1098, 1115, 1272, 1304, 1426 (sh.), 1453, 1731]
